@@ -1,0 +1,6 @@
+﻿pandas==3.0.5
+numpy==2.5.2
+SQLAlchemy==2.0.52
+requests==2.34.2
+python-dotenv==1.2.3
+ipykernel==7.3.0
