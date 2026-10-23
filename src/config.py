@@ -20,8 +20,9 @@ load_dotenv(RAIZ / ".env")
 
 # --- Banco Central de Chile ---
 # Registro gratuito en: https://si3.bcentral.cl/Siete/es/Siete/API
-BCCH_USUARIO = os.getenv("BCCH_USUARIO", "joaquin.gonzalez4@mail.udp.cl")
-BCCH_PASSWORD = os.getenv("BCCH_PASSWORD", "We0Pe4+X")
+BCCH_USUARIO = os.getenv("BCCH_USUARIO", "")
+BCCH_PASSWORD = os.getenv("BCCH_PASSWORD", "")
+BCCH_TOKEN = os.getenv("BCCH_TOKEN", "")
 
 # --- FRED (Reserva Federal de St. Louis) ---
 # API key gratuita en: https://fred.stlouisfed.org/docs/api/api_key.html
