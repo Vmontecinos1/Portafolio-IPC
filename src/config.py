@@ -46,6 +46,9 @@ SERIES_BCCH = [
     # Razón economica: Aísla factores estacionales y estancamientos para medir la tendencia real del crecimiento
     ("F032.IMC.IND.Z.Z.EP18.Z.Z.1.M", "Imacec Desestacionalizado", "M", "índice 2018=100", 1),
     
+    # Mercado laboral
+    # Razón economica: Un mercado laboral holgado (desempleo alto) reduce las presiones salariales y de demanda sobre la inflación
+    ("F049.DES.TAS.INE9.10.M", "Tasa de Desempleo", "M", "% fuerza de trabajo", 3),
     # Politica monetaria
     # Razón economica: Instrumento de politica monetaria del Banco Central que determina la tasa de interes de referencia
     ("F022.TPM.TIN.D001.NO.Z.D", "Tasa de Política Monetaria (TPM)", "D", "% anual", 4),
@@ -54,7 +57,7 @@ SERIES_BCCH = [
     # Razón economica: El valor del dolar impacta directamente en los costos de importación y el IPC
     ("F073.TCO.PRE.Z.D", "Tipo de Cambio Observado (CLP/USD)", "D", "CLP/USD", 5),
     # Razón economica: Principal commodity de exportación: Variaciones impactan ingresos fiscales y tipo de cambio
-    ("F072.CLP.PRE.Z.D", "Precio del Cobre", "D", "US$/lb", 5),
+    ("F019.PPB.PRE.100.D", "Precio del Cobre", "D", "US$/lb", 5),
 ]
 
 SERIES_FRED = [
@@ -66,7 +69,7 @@ SERIES_FRED = [
     ("FEDFUNDS", "Tasa Fed Funds (EE.UU.)", "M", "% anual", 6),
     
     # Razón económica: Mide la fortaleza del dólar frente a una canasta global de monedas de referencia
-    ("DTWEXBGS", "Índice Dólar Global (Nominal Advanced Foreign Economies)", "M", "índice 2006=100", 6),
+        ("DTWEXBGS", "Índice Dólar Global (Nominal Broad)", "D", "índice ene-2006=100", 6),
     
     # Razón económica: Indicador de rendimiento del bono a 10 años que refleja las expectativas macro de largo plazo
     ("GS10", "Tasa de Bonos del Tesoro EE.UU. 10 años", "M", "% anual", 6),
