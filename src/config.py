@@ -28,6 +28,11 @@ BCCH_TOKEN = os.getenv("BCCH_TOKEN", "")
 # API key gratuita en: https://fred.stlouisfed.org/docs/api/api_key.html
 FRED_API_KEY = os.getenv("FRED_API_KEY", "")
 
+# --- Parámetros del análisis ---
+# Fecha de corte: la misma que se usa en "python src/carga_db.py --hasta ..." y en el README
+FECHA_CORTE = "2026-09-30"
+# Variable objetivo: IPC general (índice). La inflación a 12 meses se calcula en SQL a partir de él.
+VARIABLE_OBJETIVO = "F074.IPC.IND.Z.EP23.C.M"
 # ============================================================
 # CATÁLOGO DE SERIES DEL PROYECTO
 # ============================================================
